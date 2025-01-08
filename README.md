@@ -1,7 +1,5 @@
 # Quiz
 
- 
-
 ## Welcome Message
 
 Welcome to this coding test. For enhanced readability, please copy the contents of this documentation into a file using Markdown's extension `.md`.
@@ -39,9 +37,6 @@ Please create a folder structure like the following:
 
 Your `quiz.py` should have the following content.
 ```python
-
- 
-
 def reverse_list(l:list):
 
     """
@@ -68,12 +63,7 @@ def solve_sudoku(matrix):
 
 ```
 
- 
-
 ### 2 Webapp
-
- 
-
 Build a basic real-time chat application using FastAPI Framework and WebSockets. The application should have the following requirements:
 
 - Allow multiple clients to connect to the server and broadcast messages to all connected clients in real time
@@ -83,10 +73,7 @@ Build a basic real-time chat application using FastAPI Framework and WebSockets.
   - Each client should send its username upon connection
   - The server should prepend the username to each message before broadcasting it to other clients.
 
- 
-
 #### Example
-
 - When Client A connects, it sends its username "ClientA"
 - When Client B connects, it sends its username "ClientB"
 - When ClientA sends a message "Hello, everyone!", the server broadcasts "CLientA: Hello, everyone!" to all connected clients
@@ -100,48 +87,28 @@ The following is an example code for your `main.py` file, it gives you the basic
  
 
 ```python
-
 app = FastAPI()
-
 class ConnectionManager:
-
     def __init__(self):
-
         pass
-
 
     async def connect(self, websocket: WebSocket):
-
         await websocket.accept()
-
         pass
-
- 
 
     def disconnect(self, websocket: WebSocket):
-
         pass
 
- 
-
     async def broadcast(self, message: str):
-
         for connection in self.active_connections:
-
             pass
 
- 
-
 manager = ConnectionManager()
-
- 
 
 @app.websocket("/ws/{username}")
 
 async def websocket_endpoint(websocket: WebSocket, username: str):
-
     pass
-
 ```
 
 
@@ -216,4 +183,3 @@ def count_occurrences(lst):
             counts[item] = 1
     return counts
 ```
-

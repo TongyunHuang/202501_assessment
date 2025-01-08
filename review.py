@@ -6,6 +6,7 @@ def add_to_list(value, my_list=[]):
 """
 Answer: This method is working as expected. It will add value to the list passed in as paramater.
 """
+
 # Review 2
 
 def format_greeting(name, age):

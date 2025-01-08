@@ -183,3 +183,19 @@ def count_occurrences(lst):
             counts[item] = 1
     return counts
 ```
+----
+## Webapp Guide
+1. Navigate to `./webapp `
+2. Run the FastAPI server
+```
+uvicorn main:app --reload
+```
+3. Open new terminal and connect as a client
+```
+wscat -c ws://localhost:8000/ws/{username}
+```
+For example, following command will connect you as "User1"
+```
+wscat -c ws://localhost:8000/ws/User1
+```
+4. Following is a demo of the implementation
